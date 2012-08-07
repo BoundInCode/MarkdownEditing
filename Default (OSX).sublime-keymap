@@ -1,4 +1,11 @@
 [
+    // Underline Markdown Titles
+    { "keys": ["super+ctrl+u"], "command": "underline_titles", "context": [
+    { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }]},
+    { "keys": ["#"], "command": "underline_titles", "context": [      
+        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+        { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]},
 	// selection pairing with *, _ and `
     { "keys": ["*"], "command": "insert_snippet", "args": {"contents": "*$0*"}, "context":
      [

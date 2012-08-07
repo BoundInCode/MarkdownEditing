@@ -18,5 +18,9 @@
 	"auto_match_enabled": true,
 	"line_padding_top": 5,
 	"caret_style": "wide",
-	"highlight_line": true
+	"highlight_line": true,
+	"auto_complete_triggers": [{
+		"characters": "#",
+		"selector": "text.html.markdown"
+	}]
 }
